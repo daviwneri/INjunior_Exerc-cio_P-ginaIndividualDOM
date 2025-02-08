@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/*-----------------------------------------------*/
+
+header {
+    height: 90px;
+    background-color: rgb(195, 195, 195);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header nav a {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: rgba(68, 67, 69, 0.2);
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+header nav a:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+/*-----------------------------------------------*/
+
+#mainDiv1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+    gap: 20px;
+}
+
+#mainDiv1 figure img {
+    width: 200px;
+    height: auto;
+    border-radius: 100%;
+}
+
+#mainDiv1 div {
+    max-width: 600px;
+}
+
+#mainDiv1 p {
+    padding: 15px;
+    border: 2px solid black;
+    text-align: justify;
+}
+
+/*-----------------------------------------------*/
+
+#mainDiv2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+.caixa1 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 48%;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.caixa2 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 48%;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+ul, ol {
+    list-style: none;
+    padding-left: 20px;
+    display: flex;
+    gap: 20px;
+    height: 120px;
+}
+
+.hobbie, .serie {
+    background-color: lightgray;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/*-----------------------------------------------*/
+
+#feedback {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#feedback .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#feedback .form input, #feedback .form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#feedback .form input::placeholder{
+    color: black;
+}
+
+#feedback .form input:focus{
+    background-color: rgb(236, 232, 232);
+}
+
+#feedback .form textarea::placeholder{
+    color: black;
+}
+
+#feedback .form textarea:focus{
+    background-color: rgb(236, 232, 232);
+}
+
+#feedback .form button {
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#feedback .form button:hover {
+    background-color: #666;
+}
+
+.retorno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.retorno div {
+    width: 40%;
+    height: auto;
+    border: 2px solid rgb(151, 149, 149); 
+    border-radius: 10px;
+    background-color: #e4e4e4;
+    margin: 20px;
+    padding: 10px;
+    box-sizing: border-box;               
+    word-wrap: break-word;                
+    text-align: left; 
+    
+}
+
+
+/*-----------------------------------------------*/
+
+footer {
+    background-color: rgb(195, 195, 195);
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.link {
+    width: 32px;
+    height: 32px;
+}
+
+.contato{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: rgba(68, 67, 69, 0.2);
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.contato:hover{
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+
+/*-----------------------------------------------*/
+
+@media (max-width: 1201px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #mainDiv1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #mainDiv2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caixa1 {
+        width: 90%;
+        min-height: fit-content;
+        height: auto;
+        align-items: center;
+    }
+
+    .caixa2 {
+        width: 90%;
+        min-height: fit-content;
+        height: auto;
+        align-items: center;
+    }
+
+
+    #feedback form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 661px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    header nav a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    #mainDiv1 figure img {
+        width: 150px;
+    }
+
+    .caixa1 {
+        width: 100%;
+    }
+
+    .caixa2 {
+        width: 100%;
+    }
+
+    footer div {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    ul, ol{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: auto;
+
+    }
+}
